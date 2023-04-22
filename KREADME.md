@@ -7,26 +7,19 @@
 ```shell
 mkdir my_ios_folder
 cd my_ios_folder
-
+```
+```shell
 python3.10 -m venv venv
 . venv/bin/activate
 
-pip install git+https://github.com/PythonSwiftLink/kivy-ios
+pip install https://github.com/PythonSwiftLink/mod-pbxproj/archive/master.zip
+pip install https://github.com/PythonSwiftLink/kivy-ios/archive/master.zip
 pip install git+https://github.com/PythonSwiftLink/SwiftTools
-
-deactivate
-```
-
-
-```
-. venv/bin/activate
 
 toolchain build swiftonize
 toolchain build pythonswiftcore
-toolchain build python3 
 toolchain build kivy
 ```
-
 
 
 ##### temporary test folder for this tutorial
